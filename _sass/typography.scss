@@ -5,8 +5,12 @@ $base-font-size: 16pt;
 
 html {
   font-family: $primary-font;
-  font-size: 16pt;
+  font-size: $base-font-size;
   color: #2F2D2E;
+
+  @media screen and (max-width: 890px) {
+    font-size: 9pt;
+  }
 }
 
 @for $i from 1 through 6 {
@@ -16,14 +20,14 @@ html {
 }
 
 h1 {
-  font-size: 60pt;
+  font-size: 3.7rem;
 }
 h2 {
-  font-size: 36pt;
+  font-size: 2.4rem;
 }
 h3 {
-  font-size: 24pt;
+  font-size: 1.5rem;
 }
 h4 {
-  font-size: 18pt;
+  font-size: 1.125rem;
 }
