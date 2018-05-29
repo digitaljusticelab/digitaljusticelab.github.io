@@ -15,9 +15,6 @@
       </section>
       {{ page.content | markdownify }}
       {{ page.tagline }}
-    {% for footerItem in page.footer %}
-      <a href="{{ footerItem.url }}">{{ footerItem.label }}</a>
-    {% endfor %}
   </main>
   {% include partials/footer.html %}
 </body>
