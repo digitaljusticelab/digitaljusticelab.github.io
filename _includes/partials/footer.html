@@ -1,3 +1,6 @@
 <footer>
+  {% for footerItem in site.footer %}
+    <a href="{{ footerItem.url }}">{{ footerItem.label }}</a>
+  {% endfor %}
   Created using <a href="https://jekyllrb.com/">Jekyll</a>
 </footer>
