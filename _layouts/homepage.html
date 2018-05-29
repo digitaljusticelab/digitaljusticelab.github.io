@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:700|PT+Sans:400,400i,700i" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
+</head>
+<body>
+  {% include partials/header.html %}
+  <main>
+    {{ page.content }}
+    {{ page.tagline }}
+    {% for footerItem in page.footer %}
+      <a href="{{ footerItem.url }}">{{ footerItem.label }}</a>
+    {% endfor %}
+  </main>
+  {% include partials/footer.html %}
+</body>
+</html>
