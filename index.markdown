@@ -1,5 +1,5 @@
 ---
-title: Homepage
+title: Home
 date: 2018-05-28 22:26:00 -04:00
 position: 0
 tagline: Building towards a more just and equitable digital society in Canada
