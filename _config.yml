@@ -15,3 +15,10 @@ sass:
 footer:
 - label: Contact Us
   url: mailto:hello@digitaljusticelab.ca
+homepage_menu_items:
+- url: "#about-us"
+  title: About Us
+- url: "#who-we-are"
+  title: Who We Are
+- url: "#what-we-do"
+  title: What We Do
