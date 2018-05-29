@@ -14,6 +14,12 @@ Currently we are based in Toronto.
 
 ---
 
+## Who We Are
+
+This is who we are
+
+---
+
 ## What We Do
 
 At the Digital Justice Lab, we see our work as a feedback loop between three pillars. Every pillar is an important piece supporting the process of moving towards a more just and equitable digital society.
