@@ -42,7 +42,7 @@ body {
     }
 
     p {
-      line-height: 25pt;
+      line-height: 1.56rem;
       text-align: center;
     }
   }
@@ -55,23 +55,37 @@ body {
     align-items: center;
     z-index: 2;
 
+    @media screen and (max-width: 890px) {
+      height: 50vh;
+    }
+
     .logo {
       height: 50%;
       opacity: 0;
       animation: pop-in .4s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+
+      @media screen and (max-width: 500px) {
+        // height: auto;
+      }
     }
 
     .tagline {
       opacity: 0;
       max-width: 70%;
       color: $primary-blue;
-      font-size: $base-font-size * 1.8;
-      line-height: $base-font-size * 1.8 + 10;
+      font-size: 1.8rem;
+      line-height: 2.425rem;
       font-style: italic;
       text-align: center;
       text-decoration: $highlight underline;
       animation: pop-in .4s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
       animation-delay: .15s;
+
+      @media screen and (max-width: 960px) {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin: 25px 0 0;
+      }
     }
   }
 
@@ -79,10 +93,20 @@ body {
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 580px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .gallery-item {
       width: 30%;
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 580px) {
+        width: 100%;
+        margin-bottom: 50px;
+      }
 
       div:nth-child(2) {
         margin-bottom: 20px;
@@ -93,6 +117,10 @@ body {
       .gallery-image {
         width: 62%;
         margin: 0 auto;
+
+        @media screen and (max-width: 580px) {
+          width: 30%;
+        }
       }
 
       p {
