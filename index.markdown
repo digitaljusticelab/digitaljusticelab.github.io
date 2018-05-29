@@ -3,7 +3,7 @@ title: Homepage
 date: 2018-05-28 22:26:00 -04:00
 tagline: Building towards a more just and equitable digital society in Canada
 footer:
-- name: Contact Us
+- label: Contact Us
   url: mailto:hello@digitaljusticelab.ca
 layout: default
 ---
