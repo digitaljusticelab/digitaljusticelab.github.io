@@ -1,0 +1,49 @@
+---
+---
+
+@import "colors";
+@import "typography";
+
+@import "navigation";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  section {
+    padding: 5vh 10vw;
+    z-index: 1;
+
+    &:nth-child(even) {
+      background: $grey-background;
+    }
+
+    h2:first-child {
+      text-align: center;
+      color: $primary-blue;
+      margin-top: 0;
+    }
+  }
+
+  .logo-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    .logo {
+      height: 50%;
+    }
+  }
+}

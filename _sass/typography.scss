@@ -1,0 +1,28 @@
+$primary-font: 'PT Sans', sans-serif;
+$heading-font: 'Fira Sans', sans-serif;
+
+$base-font-size: 16pt;
+
+html {
+  font-family: $primary-font;
+  font-size: 16pt;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $heading-font;
+  }
+}
+
+h1 {
+  font-size: 60pt;
+}
+h2 {
+  font-size: 36pt;
+}
+h3 {
+  font-size: 24pt;
+}
+h4 {
+  font-size: 18pt;
+}

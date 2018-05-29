@@ -1,0 +1,9 @@
+name: Digital Justice Lab
+markdown: kramdown
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+sass:
+  style: compressed
