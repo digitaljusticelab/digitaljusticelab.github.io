@@ -5,7 +5,7 @@ tagline: Building towards a more just and equitable digital society in Canada
 footer:
 - label: Contact Us
   url: mailto:hello@digitaljusticelab.ca
-layout: default
+layout: homepage
 ---
 
 ## About Us
