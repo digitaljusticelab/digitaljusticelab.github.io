@@ -12,3 +12,6 @@ name: Digital Justice Lab
 markdown: kramdown
 sass:
   style: compressed
+footer:
+- label: Contact Us
+  url: mailto:hello@digitaljusticelab.ca
