@@ -2,9 +2,6 @@
 title: Digital Justice Lab
 timezone: America/New_York
 collections:
-  homepage:
-    title: Homepage
-    output: true
   posts:
     title: Posts
     output: true
