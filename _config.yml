@@ -8,11 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: assets/images
-  values:
-    image: true
 name: Digital Justice Lab
 markdown: kramdown
 sass:
