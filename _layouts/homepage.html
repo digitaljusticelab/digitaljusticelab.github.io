@@ -12,12 +12,12 @@
     <div class="content">
       <section class="logo-container">
         <img class="logo" src="{{ '/assets/images/logo.svg' | relative_url }}">
-        {{ page.tagline }}
+        <blockquote class="tagline">{{ page.tagline }}</blockquote>
       </section>
-      {% assign content = page.content | split: "---" | strip %}
+      {% assign content = page.content | split: "---" %}
       {% for section in content %}
         <section>
-          {{ section }}
+          {{ section | strip | markdownify }}
         </section>
       {% endfor %}
   </main>
