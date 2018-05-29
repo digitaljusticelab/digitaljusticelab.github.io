@@ -18,6 +18,8 @@ Currently we are based in Toronto.
 
 At the Digital Justice Lab, we see our work as a feedback loop between three pillars. Every pillar is an important piece supporting the process of moving towards a more just and equitable digital society.
 
+<gallery>
+
 1. ![participate-icon.svg](/uploads/participate-icon.svg)
    Engage
    Engage and collaborate with communities through public knowledge building, campaigns, and public art. We want to make language and concepts accessible and relatable.
@@ -29,3 +31,5 @@ At the Digital Justice Lab, we see our work as a feedback loop between three pil
 3. ![build-icon.svg](/uploads/build-icon.svg)
    Build
    Apply the knowledge shared by communities to a collaborative policymaking approach and support legal intervention.
+
+</gallery>
