@@ -9,8 +9,12 @@
 <body>
   {% include partials/header.html %}
   <main>
-    {{ page.content | markdownify }}
-    {{ page.tagline }}
+    <div class="content">
+      <section class="logo-container">
+        <img class="logo" src="{{ '/assets/images/logo.svg' | relative_url }}">
+      </section>
+      {{ page.content | markdownify }}
+      {{ page.tagline }}
     {% for footerItem in page.footer %}
       <a href="{{ footerItem.url }}">{{ footerItem.label }}</a>
     {% endfor %}
