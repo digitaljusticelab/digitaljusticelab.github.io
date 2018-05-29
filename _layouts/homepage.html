@@ -12,9 +12,14 @@
     <div class="content">
       <section class="logo-container">
         <img class="logo" src="{{ '/assets/images/logo.svg' | relative_url }}">
+        {{ page.tagline }}
       </section>
-      {{ page.content | markdownify }}
-      {{ page.tagline }}
+      {% assign content = page.content | split: "---" | strip %}
+      {% for section in content %}
+        <section>
+          {{ section }}
+        </section>
+      {% endfor %}
   </main>
   {% include partials/footer.html %}
 </body>
