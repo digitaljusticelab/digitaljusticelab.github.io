@@ -8,7 +8,8 @@ layout: homepage
 
 ## About Us
 
-The Digital Justice Lab engages and collaborates with communities on digital issues that impact them. We build the knowledge capacity to support informed decision making around digital justice issues. We are working towards building a more just and equitable digital society here in Canada shaped by us and for us. This is a place to learn, build, mess up and create a new imagining of our digital future.
+The Digital Justice Lab is a national organization that engages and collaborates with diverse communities to build alternative digital futures. We work alongside technologists, community activists, and policymakers to shape a better understanding of technology and its impact on communities across the country. Through technology capacity building we support diverse communities in making informed decisions around digital issues, helping build a more just and equitable society here in Canada. 
+
 
 Currently we are based in Toronto.
 
