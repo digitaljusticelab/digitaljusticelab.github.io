@@ -1,9 +1,19 @@
+---
+title: Digitaljusticelab.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: assets/images
+  values:
+    image: true
 name: Digital Justice Lab
 markdown: kramdown
-defaults:
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
 sass:
   style: compressed
