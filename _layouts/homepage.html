@@ -4,7 +4,7 @@
   <title>{{ page.title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:700|PT+Sans:400,400i,700i" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/homepage.css' | relative_url }}">
 </head>
 <body>
   {% include partials/header.html %}
@@ -17,7 +17,36 @@
       {% assign content = page.content | split: "---" %}
       {% for section in content %}
         <section>
-          {{ section | strip | markdownify }}
+          {% assign escaped_section = section | escape %}
+          {% if escaped_section contains '&lt;gallery&gt;' and escaped_section contains '&lt;/gallery&gt;' %}
+            {% assign gallery_section = section | split: "<gallery>" %}
+            {{ gallery_section[0] | strip | markdownify }}
+
+            {% assign gallery_items = gallery_section[1] | split: "</item>" %}
+            <div class="gallery">
+              {% for item in gallery_items %}
+                {% assign card_components = item | strip_html | newline_to_br | strip_newlines | split: '<br />' | compact %}
+                {% if card_components.size < 1 %}
+                  {% continue %}
+                {% endif %}
+                <div class="gallery-item">
+                  {% for card_component in card_components %}
+                    {% assign size = card_component | strip | size %}
+                    {% if size > 0 %}
+                      {% assign component = card_component | markdownify %}
+                      {% if component contains '<img' %}
+                        <div class="gallery-image">{{ component }}</div>
+                      {% else %}
+                        <div>{{ component }}</div>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            {{ section | strip | markdownify }}
+          {% endif %}
         </section>
       {% endfor %}
   </main>
