@@ -33,6 +33,12 @@ div.footer {
           margin-right: 5px;
         }
 
+        .footer-item-label {
+          @media screen and (max-width: 530px) {
+            display: none;
+          }
+        }
+
         &:hover {
           background-color: #ff5960;
         }
