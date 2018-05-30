@@ -1,7 +1,14 @@
 <footer>
   <ul>
     {% for footerItem in site.footer %}
-      <li><a href="{{ footerItem.url }}">{{ footerItem.label }}</a></li>
+      <li>
+        <a href="{{ footerItem.url }}">
+          {% if footerItem.fontAwesomeIcon %}
+            <i class="fab {{ footerItem.fontAwesomeIcon }}"></i>
+          {% endif %}
+          {{ footerItem.label }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </footer>

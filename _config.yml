@@ -15,6 +15,16 @@ sass:
 footer:
 - label: Contact Us
   url: mailto:hello@digitaljusticelab.ca
+  fontAwesomeIcon: fas fa-envelope
+- label: Twitter
+  url: https://twitter.com/digitaljustlab
+  fontAwesomeIcon: fab fa-twitter
+- label: Facebook
+  url: https://www.facebook.com/digitaljusticelab
+  fontAwesomeIcon: fab fa-facebook
+- label: Blog
+  url: https://medium.com/@digitaljusticelab
+  fontAwesomeIcon: fab fa-medium
 homepage_menu_items:
 - url: "#about-us"
   title: About Us
