@@ -1,6 +1,6 @@
 @import "colors";
 
-footer {
+div.footer {
   min-height: 120px;
   width: 100%;
   display: flex;
@@ -15,15 +15,14 @@ footer {
     list-style-type: none;
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+    min-width: 50vw;
 
     li {
       text-align: center;
-      margin-right: 65px;
-
-      &:last-child {
-        margin-right: 0;
-      }
+      padding-bottom: 10px;
 
       a {
         padding: 10px;
