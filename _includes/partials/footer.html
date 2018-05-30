@@ -6,7 +6,7 @@
           {% if footerItem.fontAwesomeIcon %}
             <i class="fab {{ footerItem.fontAwesomeIcon }}"></i>
           {% endif %}
-          {{ footerItem.label }}
+          <span class="footer-item-label">{{ footerItem.label }}</span>
         </a>
       </li>
     {% endfor %}
