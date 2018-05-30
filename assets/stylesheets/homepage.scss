@@ -58,22 +58,80 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
 
     @media screen and (max-width: 890px) {
       height: 50vh;
     }
 
+    .background-top {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      height: 30vh;
+
+      @media screen and (max-width: 1020px) {
+        height: 20vh;
+      }
+
+      @media screen and (max-width: 890px) {
+        left: 0;
+      }
+
+      @media screen and (max-width: 730px) {
+        left: 0;
+        height: 15vh;
+      }
+
+      @media screen and (max-width: 540px) {
+        left: 0;
+        height: 10vh;
+      }
+    }
+
+    .background-bottom {
+      position: absolute;
+      bottom: 21vh;
+      right: 25px;
+      height: 30vh;
+
+      @media screen and (max-width: 1020px) {
+        height: 20vh;
+      }
+
+      @media screen and (max-width: 890px) {
+        right: 0;
+        bottom: 42vh;
+      }
+
+      @media screen and (max-width: 730px) {
+        right: 0;
+        height: 15vh;
+      }
+
+      @media screen and (max-width: 540px) {
+        right: 0;
+        height: 10vh;
+      }
+    }
+
     .logo {
-      height: 50%;
+      max-width: 50vw;
+      padding: 20px;
+      background: #fff;
       opacity: 0;
       animation: pop-in .4s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+
+      @media screen and (max-width: 754px) {
+        height: auto;
+      }
     }
 
     .tagline {
       opacity: 0;
       max-width: 70%;
       color: $primary-blue;
+      background: #fff;
+      padding: 0 25px 25px 0;
       font-size: 1.8rem;
       line-height: 2.425rem;
       font-style: italic;
