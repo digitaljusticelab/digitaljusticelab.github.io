@@ -16,10 +16,10 @@ Currently we are based in Toronto.
 
 ## Who We Are
 
-We are a group of technologist, community organizers, policy wonks and lawyers. The Digital Justice Lab is led by Nasma Ahmed, she is an Open Web Fellow with Mozilla Foundation/Ford Foundation and will be transitioning to the lab full time in June. 
+We are a group of technologist, community organizers, policy wonks and lawyers. The Digital Justice Lab is led by Nasma Ahmed. She is an Open Web Fellow with Mozilla Foundation/Ford Foundation and will be transitioning to the lab full time in June. 
 
 Current Advisors to the Digital Justice Lab 
-Bianca Wylie, Ellie Marshall, Simona Ramkisson, Lorraine Chuen, Meghan Hellstern, Lex Gill, and Andrew Do
+Bianca Wylie, Ellie Marshall, Simona Ramkisson, Lorraine Chuen, Meghan Hellstern, Lex Gill, and Andrew Do.
 
 ---
 
