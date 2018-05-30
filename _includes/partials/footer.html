@@ -1,5 +1,7 @@
 <footer>
-  {% for footerItem in site.footer %}
-    <a href="{{ footerItem.url }}">{{ footerItem.label }}</a>
-  {% endfor %}
+  <ul>
+    {% for footerItem in site.footer %}
+      <li><a href="{{ footerItem.url }}">{{ footerItem.label }}</a></li>
+    {% endfor %}
+  </ul>
 </footer>
