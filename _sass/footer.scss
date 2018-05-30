@@ -1,34 +1,38 @@
 @import "colors";
 
 footer {
-  min-height: 150px;
+  min-height: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: $secondary-blue-dark;
   box-shadow: 0 -7px 20px 0 #888;
   z-index: 2;
+  font-size: 14pt;
 
   ul {
     list-style-type: none;
     padding-left: 0;
-    width: 30%;
     display: flex;
-    flex-direction: column;
     align-items: center;
 
     li {
-      width: 100%;
       text-align: center;
+      margin-right: 65px;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       a {
-        display: block;
         padding: 10px;
         text-decoration: none;
-        border: 5px solid #fff;
-        background-color: $primary-red;
         color: #fff;
+
+        i, .svg-inline--fa {
+          margin-right: 5px;
+        }
 
         &:hover {
           background-color: #ff5960;
